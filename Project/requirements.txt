@@ -1,0 +1,7 @@
+requests
+beautifulsoup4
+lxml
+tqdm
+reportlab   # optional; not used by default reporter but useful if you want PDF later
+selenium    # optional - only if you plan JS rendering
+webdriver-manager  # optional - only if you plan JS rendering
