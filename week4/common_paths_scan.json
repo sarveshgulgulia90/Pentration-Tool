@@ -1,0 +1,21 @@
+{
+  "discovered_paths": [
+    {
+      "url": "https://httpbin.org/cache",
+      "path": "/cache",
+      "status_code": 200,
+      "category": "sensitive_directories",
+      "content_length": 370,
+      "content_type": "application/json",
+      "server": "gunicorn/19.9.0",
+      "response_time": 0.472212
+    }
+  ],
+  "sensitive_files": [],
+  "admin_panels": [],
+  "backup_files": [],
+  "config_files": [],
+  "development_files": [],
+  "api_endpoints": [],
+  "error_pages": []
+}

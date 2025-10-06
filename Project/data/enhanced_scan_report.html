@@ -1,0 +1,124 @@
+<!doctype html><html><head><meta charset='utf-8'><title>Scan Report</title></head><body>
+<h1>Custom Vulnerability Scanner - Report</h1>
+<p>Generated: 2025-10-01T02:40:48.862096Z</p>
+<h2>Summary</h2>
+<ul><li>Pages discovered: 2</li><li>Forms discovered: 1</li></ul>
+<h2>SQL Injection Findings</h2>
+<p>No SQLi findings.</p>
+<h2>XSS Findings</h2>
+<ol>
+<li>
+<pre>{
+  "type": "reflected (form)",
+  "action": "https://httpbin.org/post",
+  "param": "custname",
+  "status": 200,
+  "evidence_snippet": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"test\", \n    \"custemail\": \"test\", \n    \"custname\": \"test<!--XSS_TEST_12345-->\", \n    \"custtel\": \"test\", \n    \"delivery\": \"test\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"*/*\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Content-Length\": \"124\", \n    \"Content-Type\": \"application/x-www-form-urlencoded\", \n    \"Host\": \"httpbin.org\", \n    \"User-Agent\": \"CustomScanner/XSSDetector/1"
+}</pre>
+</li>
+<li>
+<pre>{
+  "type": "reflected (form)",
+  "action": "https://httpbin.org/post",
+  "param": "custtel",
+  "status": 200,
+  "evidence_snippet": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"test\", \n    \"custemail\": \"test\", \n    \"custname\": \"test\", \n    \"custtel\": \"test<!--XSS_TEST_12345-->\", \n    \"delivery\": \"test\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"*/*\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Content-Length\": \"124\", \n    \"Content-Type\": \"application/x-www-form-urlencoded\", \n    \"Host\": \"httpbin.org\", \n    \"User-Agent\": \"CustomScanner/XSSDetector/1"
+}</pre>
+</li>
+<li>
+<pre>{
+  "type": "reflected (form)",
+  "action": "https://httpbin.org/post",
+  "param": "custemail",
+  "status": 200,
+  "evidence_snippet": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"test\", \n    \"custemail\": \"test<!--XSS_TEST_12345-->\", \n    \"custname\": \"test\", \n    \"custtel\": \"test\", \n    \"delivery\": \"test\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"*/*\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Content-Length\": \"124\", \n    \"Content-Type\": \"application/x-www-form-urlencoded\", \n    \"Host\": \"httpbin.org\", \n    \"User-Agent\": \"CustomScanner/XSSDetector/1"
+}</pre>
+</li>
+<li>
+<pre>{
+  "type": "reflected (form)",
+  "action": "https://httpbin.org/post",
+  "param": "size",
+  "status": 200,
+  "evidence_snippet": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"test\", \n    \"custemail\": \"test\", \n    \"custname\": \"test\", \n    \"custtel\": \"test\", \n    \"delivery\": \"test\", \n    \"size\": \"large<!--XSS_TEST_12345-->\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"*/*\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Content-Length\": \"124\", \n    \"Content-Type\": \"application/x-www-form-urlencoded\", \n    \"Host\": \"httpbin.org\", \n    \"User-Agent\": \"CustomScanner/XSSDetector/1"
+}</pre>
+</li>
+<li>
+<pre>{
+  "type": "reflected (form)",
+  "action": "https://httpbin.org/post",
+  "param": "size",
+  "status": 200,
+  "evidence_snippet": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"test\", \n    \"custemail\": \"test\", \n    \"custname\": \"test\", \n    \"custtel\": \"test\", \n    \"delivery\": \"test\", \n    \"size\": \"large<!--XSS_TEST_12345-->\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"*/*\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Content-Length\": \"124\", \n    \"Content-Type\": \"application/x-www-form-urlencoded\", \n    \"Host\": \"httpbin.org\", \n    \"User-Agent\": \"CustomScanner/XSSDetector/1"
+}</pre>
+</li>
+<li>
+<pre>{
+  "type": "reflected (form)",
+  "action": "https://httpbin.org/post",
+  "param": "size",
+  "status": 200,
+  "evidence_snippet": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"test\", \n    \"custemail\": \"test\", \n    \"custname\": \"test\", \n    \"custtel\": \"test\", \n    \"delivery\": \"test\", \n    \"size\": \"large<!--XSS_TEST_12345-->\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"*/*\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Content-Length\": \"124\", \n    \"Content-Type\": \"application/x-www-form-urlencoded\", \n    \"Host\": \"httpbin.org\", \n    \"User-Agent\": \"CustomScanner/XSSDetector/1"
+}</pre>
+</li>
+<li>
+<pre>{
+  "type": "reflected (form)",
+  "action": "https://httpbin.org/post",
+  "param": "topping",
+  "status": 200,
+  "evidence_snippet": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"test\", \n    \"custemail\": \"test\", \n    \"custname\": \"test\", \n    \"custtel\": \"test\", \n    \"delivery\": \"test\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom<!--XSS_TEST_12345-->\"\n  }, \n  \"headers\": {\n    \"Accept\": \"*/*\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Content-Length\": \"124\", \n    \"Content-Type\": \"application/x-www-form-urlencoded\", \n    \"Host\": \"httpbin.org\", \n    \"User-Agent\": \"CustomScanner/XSSDetector/1"
+}</pre>
+</li>
+<li>
+<pre>{
+  "type": "reflected (form)",
+  "action": "https://httpbin.org/post",
+  "param": "topping",
+  "status": 200,
+  "evidence_snippet": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"test\", \n    \"custemail\": \"test\", \n    \"custname\": \"test\", \n    \"custtel\": \"test\", \n    \"delivery\": \"test\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom<!--XSS_TEST_12345-->\"\n  }, \n  \"headers\": {\n    \"Accept\": \"*/*\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Content-Length\": \"124\", \n    \"Content-Type\": \"application/x-www-form-urlencoded\", \n    \"Host\": \"httpbin.org\", \n    \"User-Agent\": \"CustomScanner/XSSDetector/1"
+}</pre>
+</li>
+<li>
+<pre>{
+  "type": "reflected (form)",
+  "action": "https://httpbin.org/post",
+  "param": "topping",
+  "status": 200,
+  "evidence_snippet": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"test\", \n    \"custemail\": \"test\", \n    \"custname\": \"test\", \n    \"custtel\": \"test\", \n    \"delivery\": \"test\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom<!--XSS_TEST_12345-->\"\n  }, \n  \"headers\": {\n    \"Accept\": \"*/*\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Content-Length\": \"124\", \n    \"Content-Type\": \"application/x-www-form-urlencoded\", \n    \"Host\": \"httpbin.org\", \n    \"User-Agent\": \"CustomScanner/XSSDetector/1"
+}</pre>
+</li>
+<li>
+<pre>{
+  "type": "reflected (form)",
+  "action": "https://httpbin.org/post",
+  "param": "topping",
+  "status": 200,
+  "evidence_snippet": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"test\", \n    \"custemail\": \"test\", \n    \"custname\": \"test\", \n    \"custtel\": \"test\", \n    \"delivery\": \"test\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom<!--XSS_TEST_12345-->\"\n  }, \n  \"headers\": {\n    \"Accept\": \"*/*\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Content-Length\": \"124\", \n    \"Content-Type\": \"application/x-www-form-urlencoded\", \n    \"Host\": \"httpbin.org\", \n    \"User-Agent\": \"CustomScanner/XSSDetector/1"
+}</pre>
+</li>
+<li>
+<pre>{
+  "type": "reflected (form)",
+  "action": "https://httpbin.org/post",
+  "param": "delivery",
+  "status": 200,
+  "evidence_snippet": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"test\", \n    \"custemail\": \"test\", \n    \"custname\": \"test\", \n    \"custtel\": \"test\", \n    \"delivery\": \"test<!--XSS_TEST_12345-->\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"*/*\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Content-Length\": \"124\", \n    \"Content-Type\": \"application/x-www-form-urlencoded\", \n    \"Host\": \"httpbin.org\", \n    \"User-Agent\": \"CustomScanner/XSSDetector/1"
+}</pre>
+</li>
+<li>
+<pre>{
+  "type": "reflected (form)",
+  "action": "https://httpbin.org/post",
+  "param": "comments",
+  "status": 200,
+  "evidence_snippet": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"test<!--XSS_TEST_12345-->\", \n    \"custemail\": \"test\", \n    \"custname\": \"test\", \n    \"custtel\": \"test\", \n    \"delivery\": \"test\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"*/*\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Content-Length\": \"124\", \n    \"Content-Type\": \"application/x-www-form-urlencoded\", \n    \"Host\": \"httpbin.org\", \n    \"User-Agent\": \"CustomScanner/XSSDetector/1"
+}</pre>
+</li>
+</ol>
+<h2>Pages (sample)</h2>
+<ul>
+<li>https://httpbin.org/ (status 200)</li>
+<li>https://httpbin.org/forms/post (status 200)</li>
+</ul>
+</body></html>

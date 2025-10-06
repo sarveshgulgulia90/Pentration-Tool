@@ -1,0 +1,92 @@
+{
+  "pages": [
+    {
+      "url": "https://httpbin.org/",
+      "status_code": 200,
+      "content_length": 9593,
+      "title": "httpbin.org",
+      "links": [
+        "https://github.com/requests/httpbin",
+        "https://kennethreitz.org",
+        "https://httpbin.org/forms/post",
+        "https://github.com/rochacbruno/flasgger"
+      ]
+    },
+    {
+      "url": "https://httpbin.org/forms/post",
+      "status_code": 200,
+      "content_length": 1397,
+      "title": null,
+      "links": []
+    }
+  ],
+  "forms": [
+    {
+      "page": "https://httpbin.org/forms/post",
+      "action": "https://httpbin.org/post",
+      "method": "post",
+      "inputs": [
+        {
+          "name": "custname",
+          "type": null,
+          "value": ""
+        },
+        {
+          "name": "custtel",
+          "type": "tel",
+          "value": ""
+        },
+        {
+          "name": "custemail",
+          "type": "email",
+          "value": ""
+        },
+        {
+          "name": "size",
+          "type": "radio",
+          "value": "small"
+        },
+        {
+          "name": "size",
+          "type": "radio",
+          "value": "medium"
+        },
+        {
+          "name": "size",
+          "type": "radio",
+          "value": "large"
+        },
+        {
+          "name": "topping",
+          "type": "checkbox",
+          "value": "bacon"
+        },
+        {
+          "name": "topping",
+          "type": "checkbox",
+          "value": "cheese"
+        },
+        {
+          "name": "topping",
+          "type": "checkbox",
+          "value": "onion"
+        },
+        {
+          "name": "topping",
+          "type": "checkbox",
+          "value": "mushroom"
+        },
+        {
+          "name": "delivery",
+          "type": "time",
+          "value": ""
+        },
+        {
+          "name": "comments",
+          "type": "textarea",
+          "value": ""
+        }
+      ]
+    }
+  ]
+}

