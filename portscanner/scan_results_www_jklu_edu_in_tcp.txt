@@ -1,0 +1,2 @@
+HTTP Port 80 | open | HTTP 403 | cloudflare
+HTTP Port 443 | open | HTTP 400 | cloudflare

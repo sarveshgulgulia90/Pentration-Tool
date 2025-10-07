@@ -1,0 +1,2 @@
+HTTP Port 443 | open | HTTP 502 | Unknown server
+HTTP Port 80 | open | HTTP 200 | ESF

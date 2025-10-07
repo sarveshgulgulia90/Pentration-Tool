@@ -1,0 +1,9 @@
+TCP Port 80 | open | HTTP/1.1 502 Operation not permitted
+Date: Mon, 06 Oct 2025 10:16:32 GMT
+Cache-Control: no-cache
+Pragma: no-cache
+Content-Type: text/html; charset="UTF-8"
+Content-Length: 74225
+Via: HTTP/1.1 forward.http.proxy:3128
+Connection: close
+HTTP Port 443 | open | HTTP 502 | Unknown server
