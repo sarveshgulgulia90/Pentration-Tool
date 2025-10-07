@@ -1,0 +1,65 @@
+{
+  "url": "https://jklu.edu.in",
+  "fetched_at": "2025-10-07T08:15:27.323797Z",
+  "headers": {
+    "Strict-Transport-Security": "max-age=15552000; includeSubDomains; preload",
+    "Content-Security-Policy": "Missing",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "same-origin",
+    "Permissions-Policy": "accelerometer=(),autoplay=(),browsing-topics=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),interest-cohort=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=()"
+  },
+  "missing_headers": [
+    "Content-Security-Policy"
+  ],
+  "cookies": [],
+  "tls": {
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "protocol": "TLSv1.3",
+    "cert_expiry": "2025-12-16",
+    "days_to_expiry": 70,
+    "expired": false,
+    "subject": [
+      [
+        [
+          "commonName",
+          "jklu.edu.in"
+        ]
+      ]
+    ],
+    "issuer": [
+      [
+        [
+          "countryName",
+          "US"
+        ]
+      ],
+      [
+        [
+          "organizationName",
+          "Google Trust Services"
+        ]
+      ],
+      [
+        [
+          "commonName",
+          "WE1"
+        ]
+      ]
+    ],
+    "trusted": true
+  },
+  "sensitive_paths": [],
+  "score": 85.0,
+  "breakdown": {
+    "headers": 25.0,
+    "cookies": 15,
+    "tls": 25.0,
+    "paths": 20.0,
+    "misc": 0.0
+  },
+  "grade": {
+    "grade": "A",
+    "summary": "Excellent security posture."
+  }
+}

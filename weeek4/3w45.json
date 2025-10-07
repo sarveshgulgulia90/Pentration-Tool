@@ -1,0 +1,170 @@
+{
+  "url": "https://www.facebook.com",
+  "fetched_at": "2025-10-06T17:08:15.802215Z",
+  "headers": {
+    "Strict-Transport-Security": "max-age=15552000; preload",
+    "Content-Security-Policy": "default-src blob: 'self' https://*.fbsbx.com *.facebook.com *.fbcdn.net;script-src *.facebook.com *.fbcdn.net *.facebook.net 127.0.0.1:* 'nonce-U82e0ABj' blob: 'self' connect.facebook.net 'unsafe-eval' https://*.google-analytics.com *.google.com;style-src *.fbcdn.net data: *.facebook.com 'unsafe-inline' https://fonts.googleapis.com;connect-src *.facebook.com facebook.com *.fbcdn.net *.facebook.net wss://*.facebook.com:* wss://*.whatsapp.com:* wss://*.fbcdn.net attachment.fbsbx.com ws://localhost:* blob: *.cdninstagram.com 'self' http://localhost:3103 wss://gateway.facebook.com wss://edge-chat.facebook.com wss://snaptu-d.facebook.com wss://kaios-d.facebook.com/ v.whatsapp.net *.fbsbx.com *.fb.com https://*.google-analytics.com;font-src data: *.facebook.com *.fbcdn.net *.fbsbx.com https://fonts.gstatic.com;img-src *.fbcdn.net *.facebook.com data: https://*.fbsbx.com facebook.com *.cdninstagram.com fbsbx.com fbcdn.net connect.facebook.net *.carriersignal.info blob: android-webview-video-poster: *.whatsapp.net *.fb.com *.oculuscdn.com *.tenor.co *.tenor.com *.giphy.com https://trustly.one/ https://*.trustly.one/ https://paywithmybank.com/ https://*.paywithmybank.com/ https://www.googleadservices.com https://googleads.g.doubleclick.net https://*.google-analytics.com;media-src *.cdninstagram.com blob: *.fbcdn.net *.fbsbx.com www.facebook.com *.facebook.com data: *.tenor.co *.tenor.com https://*.giphy.com;child-src data: blob: 'self' https://*.fbsbx.com *.facebook.com *.fbcdn.net;frame-src *.facebook.com *.fbsbx.com fbsbx.com data: www.instagram.com *.fbcdn.net accounts.meta.com *.accounts.meta.com https://trustly.one/ https://*.trustly.one/ https://paywithmybank.com/ https://*.paywithmybank.com/ https://www.googleadservices.com https://googleads.g.doubleclick.net https://www.google.com https://td.doubleclick.net *.google.com *.doubleclick.net;manifest-src data: blob: 'self' https://*.fbsbx.com *.facebook.com *.fbcdn.net;object-src data: blob: 'self' https://*.fbsbx.com *.facebook.com *.fbcdn.net;worker-src blob: *.facebook.com data:;block-all-mixed-content;upgrade-insecure-requests;",
+    "X-Frame-Options": "DENY",
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "Missing",
+    "Permissions-Policy": "accelerometer=(), attribution-reporting=(self), autoplay=(), bluetooth=(), browsing-topics=(self), camera=(self), ch-device-memory=(), ch-downlink=(), ch-dpr=(), ch-ect=(), ch-rtt=(), ch-save-data=(), ch-ua-arch=(), ch-ua-bitness=(), ch-viewport-height=(), ch-viewport-width=(), ch-width=(), clipboard-read=(self), clipboard-write=(self), compute-pressure=(), display-capture=(self), encrypted-media=(self), fullscreen=(self), gamepad=*, geolocation=(self), gyroscope=(), hid=(), idle-detection=(), interest-cohort=(self), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(self), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), private-state-token-issuance=(), publickey-credentials-get=(self), screen-wake-lock=(), serial=(), shared-storage=(), shared-storage-select-url=(), private-state-token-redemption=(), usb=(), unload=(self), window-management=(), xr-spatial-tracking=(self);report-to=\"permissions_policy\""
+  },
+  "missing_headers": [
+    "Referrer-Policy"
+  ],
+  "cookies": [
+    {
+      "name": "fr",
+      "value_sample": "0Y1ZkR87...",
+      "secure": true,
+      "httpOnly": true
+    },
+    {
+      "name": "sb",
+      "value_sample": "gvfjaItX...",
+      "secure": true,
+      "httpOnly": true
+    }
+  ],
+  "tls": {
+    "cipher": "TLS_CHACHA20_POLY1305_SHA256",
+    "protocol": "TLSv1.3",
+    "cert_expiry": "2025-10-14",
+    "days_to_expiry": 8,
+    "expired": false,
+    "subject": [
+      [
+        [
+          "countryName",
+          "US"
+        ]
+      ],
+      [
+        [
+          "stateOrProvinceName",
+          "California"
+        ]
+      ],
+      [
+        [
+          "localityName",
+          "Menlo Park"
+        ]
+      ],
+      [
+        [
+          "organizationName",
+          "Meta Platforms, Inc."
+        ]
+      ],
+      [
+        [
+          "commonName",
+          "*.facebook.com"
+        ]
+      ]
+    ],
+    "issuer": [
+      [
+        [
+          "countryName",
+          "US"
+        ]
+      ],
+      [
+        [
+          "organizationName",
+          "DigiCert Inc"
+        ]
+      ],
+      [
+        [
+          "commonName",
+          "DigiCert Global G2 TLS RSA SHA256 2020 CA1"
+        ]
+      ]
+    ],
+    "trusted": true
+  },
+  "sensitive_paths": [
+    {
+      "path": "/administrator",
+      "status": 200,
+      "url": "https://www.facebook.com/administrator",
+      "location": null
+    },
+    {
+      "path": "/admin",
+      "status": 200,
+      "url": "https://www.facebook.com/admin",
+      "location": null
+    },
+    {
+      "path": "/pma",
+      "status": 200,
+      "url": "https://www.facebook.com/pma",
+      "location": null
+    },
+    {
+      "path": "/config",
+      "status": 200,
+      "url": "https://www.facebook.com/config",
+      "location": null
+    },
+    {
+      "path": "/login",
+      "status": 200,
+      "url": "https://www.facebook.com/login",
+      "location": null
+    },
+    {
+      "path": "/backup",
+      "status": 200,
+      "url": "https://www.facebook.com/backup",
+      "location": null
+    },
+    {
+      "path": "/phpmyadmin",
+      "status": 200,
+      "url": "https://www.facebook.com/phpmyadmin",
+      "location": null
+    },
+    {
+      "path": "/server-status",
+      "status": 302,
+      "url": "https://www.facebook.com/server-status",
+      "location": "https://www.facebook.com/serverstatus/"
+    },
+    {
+      "path": "/wp-admin",
+      "status": 200,
+      "url": "https://www.facebook.com/wp-admin",
+      "location": null
+    },
+    {
+      "path": "/.env",
+      "status": 200,
+      "url": "https://www.facebook.com/.env",
+      "location": null
+    },
+    {
+      "path": "/.git",
+      "status": 200,
+      "url": "https://www.facebook.com/.git",
+      "location": null
+    },
+    {
+      "path": "/debug",
+      "status": 200,
+      "url": "https://www.facebook.com/debug",
+      "location": null
+    }
+  ],
+  "score": 62.5,
+  "score_breakdown": {
+    "headers": 22.5,
+    "cookies": 15.0,
+    "tls": 25.0,
+    "paths": 0.0
+  }
+}
