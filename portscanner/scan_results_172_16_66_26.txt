@@ -1,0 +1,3 @@
+Port 135 OPEN | Banner: No banner detected
+Port 139 OPEN | Banner: No banner detected
+Port 445 OPEN | Banner: No banner detected

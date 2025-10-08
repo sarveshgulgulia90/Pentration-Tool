@@ -1,0 +1,134 @@
+{
+  "url": "https://www.chess.com",
+  "fetched_at": "2025-10-07T09:43:32.067223Z",
+  "headers": {
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+    "Content-Security-Policy": "frame-ancestors 'self'",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "Missing",
+    "Permissions-Policy": "Missing"
+  },
+  "missing_headers": [
+    "Referrer-Policy",
+    "Permissions-Policy"
+  ],
+  "cookies": [
+    {
+      "name": "psid",
+      "value_sample": "17191e5a...",
+      "secure": true,
+      "httpOnly": false
+    },
+    {
+      "name": "ATTRIBUTION_V1",
+      "value_sample": "%7B%22in...",
+      "secure": false,
+      "httpOnly": false
+    },
+    {
+      "name": "me",
+      "value_sample": "%7B%22de...",
+      "secure": false,
+      "httpOnly": false
+    },
+    {
+      "name": "BUCKETING_ID",
+      "value_sample": "1719599c...",
+      "secure": true,
+      "httpOnly": false
+    },
+    {
+      "name": "PHPSESSID",
+      "value_sample": "81372284...",
+      "secure": true,
+      "httpOnly": true
+    },
+    {
+      "name": "__cf_bm",
+      "value_sample": ".gkf9oBW...",
+      "secure": true,
+      "httpOnly": true
+    },
+    {
+      "name": "asset_push",
+      "value_sample": "20251006...",
+      "secure": false,
+      "httpOnly": true
+    },
+    {
+      "name": "visitorid",
+      "value_sample": "%3Acba7%...",
+      "secure": false,
+      "httpOnly": true
+    }
+  ],
+  "tls": {
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "protocol": "TLSv1.3",
+    "cert_expiry": "2025-12-23",
+    "days_to_expiry": 77,
+    "expired": false,
+    "subject": [
+      [
+        [
+          "commonName",
+          "chess.com"
+        ]
+      ]
+    ],
+    "issuer": [
+      [
+        [
+          "countryName",
+          "US"
+        ]
+      ],
+      [
+        [
+          "organizationName",
+          "Google Trust Services"
+        ]
+      ],
+      [
+        [
+          "commonName",
+          "WE1"
+        ]
+      ]
+    ],
+    "trusted": true
+  },
+  "sensitive_paths": [
+    {
+      "path": "/admin",
+      "status": 307,
+      "url": "https://www.chess.com/admin",
+      "location": "https://admin.chess.com/admin"
+    },
+    {
+      "path": "/administrator",
+      "status": 307,
+      "url": "https://www.chess.com/administrator",
+      "location": "https://admin.chess.com/admin"
+    },
+    {
+      "path": "/login",
+      "status": 200,
+      "url": "https://www.chess.com/login",
+      "location": null
+    }
+  ],
+  "score": 67.5,
+  "breakdown": {
+    "headers": 20.0,
+    "cookies": 7.5,
+    "tls": 25.0,
+    "paths": 5.0,
+    "misc": 10
+  },
+  "grade": {
+    "grade": "C",
+    "summary": "Average security posture. Key areas need attention."
+  }
+}

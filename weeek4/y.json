@@ -1,0 +1,65 @@
+{
+  "url": "https://www.gmail.com",
+  "fetched_at": "2025-10-07T09:36:24.046207Z",
+  "headers": {
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+    "Content-Security-Policy": "require-trusted-types-for 'script';report-uri /v3/signin/_/AccountsSignInUi/cspreport, script-src 'report-sample' 'nonce-2cYbUKU53HLR4AbuU3tPlw' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /v3/signin/_/AccountsSignInUi/cspreport;worker-src 'self'",
+    "X-Frame-Options": "DENY",
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "Missing",
+    "Permissions-Policy": "ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*"
+  },
+  "missing_headers": [
+    "Referrer-Policy"
+  ],
+  "cookies": [],
+  "tls": {
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "protocol": "TLSv1.3",
+    "cert_expiry": "2025-12-08",
+    "days_to_expiry": 61,
+    "expired": false,
+    "subject": [
+      [
+        [
+          "commonName",
+          "www.gmail.com"
+        ]
+      ]
+    ],
+    "issuer": [
+      [
+        [
+          "countryName",
+          "US"
+        ]
+      ],
+      [
+        [
+          "organizationName",
+          "Google Trust Services"
+        ]
+      ],
+      [
+        [
+          "commonName",
+          "WR2"
+        ]
+      ]
+    ],
+    "trusted": true
+  },
+  "sensitive_paths": [],
+  "score": 82.5,
+  "breakdown": {
+    "headers": 22.5,
+    "cookies": 15,
+    "tls": 25.0,
+    "paths": 20.0,
+    "misc": 0.0
+  },
+  "grade": {
+    "grade": "A",
+    "summary": "Excellent security posture."
+  }
+}

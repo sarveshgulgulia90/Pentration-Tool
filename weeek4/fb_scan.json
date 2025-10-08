@@ -1,0 +1,168 @@
+{
+  "url": "https://facebook.com",
+  "fetched_at": "2025-10-07T08:14:07.719668Z",
+  "headers": {
+    "Strict-Transport-Security": "max-age=15552000; preload",
+    "Content-Security-Policy": "default-src blob: 'self' https://*.fbsbx.com *.facebook.com *.fbcdn.net;script-src *.facebook.com *.fbcdn.net 127.0.0.1:* 'nonce-nWrm5va7' blob: 'self' 'unsafe-eval';style-src *.fbcdn.net data: *.facebook.com 'unsafe-inline';connect-src *.facebook.com facebook.com *.fbcdn.net wss://*.facebook.com:* wss://*.whatsapp.com:* wss://*.fbcdn.net attachment.fbsbx.com ws://localhost:* blob: *.cdninstagram.com 'self' http://localhost:3103 wss://gateway.facebook.com wss://edge-chat.facebook.com wss://snaptu-d.facebook.com wss://kaios-d.facebook.com/ v.whatsapp.net *.fbsbx.com *.fb.com;font-src data: *.facebook.com *.fbcdn.net *.fbsbx.com;img-src *.fbcdn.net *.facebook.com data: https://*.fbsbx.com facebook.com *.cdninstagram.com fbsbx.com fbcdn.net blob: android-webview-video-poster: *.whatsapp.net *.fb.com *.oculuscdn.com https://trustly.one/ https://*.trustly.one/ https://paywithmybank.com/ https://*.paywithmybank.com/;media-src *.cdninstagram.com blob: *.fbcdn.net *.fbsbx.com www.facebook.com *.facebook.com data:;child-src data: blob: 'self' https://*.fbsbx.com *.facebook.com *.fbcdn.net;frame-src *.facebook.com *.fbsbx.com fbsbx.com data: www.instagram.com *.fbcdn.net accounts.meta.com *.accounts.meta.com https://trustly.one/ https://*.trustly.one/ https://paywithmybank.com/ https://*.paywithmybank.com/;manifest-src data: blob: 'self' https://*.fbsbx.com *.facebook.com *.fbcdn.net;object-src data: blob: 'self' https://*.fbsbx.com *.facebook.com *.fbcdn.net;worker-src blob: *.facebook.com data:;block-all-mixed-content;upgrade-insecure-requests;report-uri https://www.facebook.com/csp/reporting/?m=c&minimize=0;",
+    "X-Frame-Options": "DENY",
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "Missing",
+    "Permissions-Policy": "accelerometer=(), attribution-reporting=(self), autoplay=(), bluetooth=(), browsing-topics=(self), camera=(self), ch-device-memory=(), ch-downlink=(), ch-dpr=(), ch-ect=(), ch-rtt=(), ch-save-data=(), ch-ua-arch=(), ch-ua-bitness=(), ch-viewport-height=(), ch-viewport-width=(), ch-width=(), clipboard-read=(self), clipboard-write=(self), compute-pressure=(), display-capture=(self), encrypted-media=(self), fullscreen=(self), gamepad=*, geolocation=(self), gyroscope=(), hid=(), idle-detection=(), interest-cohort=(self), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(self), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), private-state-token-issuance=(), publickey-credentials-get=(self), screen-wake-lock=(), serial=(), shared-storage=(), shared-storage-select-url=(), private-state-token-redemption=(), usb=(), unload=(self), window-management=(), xr-spatial-tracking=(self);report-to=\"permissions_policy\""
+  },
+  "missing_headers": [
+    "Referrer-Policy"
+  ],
+  "cookies": [],
+  "tls": {
+    "cipher": "TLS_CHACHA20_POLY1305_SHA256",
+    "protocol": "TLSv1.3",
+    "cert_expiry": "2025-10-14",
+    "days_to_expiry": 7,
+    "expired": false,
+    "subject": [
+      [
+        [
+          "countryName",
+          "US"
+        ]
+      ],
+      [
+        [
+          "stateOrProvinceName",
+          "California"
+        ]
+      ],
+      [
+        [
+          "localityName",
+          "Menlo Park"
+        ]
+      ],
+      [
+        [
+          "organizationName",
+          "Meta Platforms, Inc."
+        ]
+      ],
+      [
+        [
+          "commonName",
+          "*.facebook.com"
+        ]
+      ]
+    ],
+    "issuer": [
+      [
+        [
+          "countryName",
+          "US"
+        ]
+      ],
+      [
+        [
+          "organizationName",
+          "DigiCert Inc"
+        ]
+      ],
+      [
+        [
+          "commonName",
+          "DigiCert Global G2 TLS RSA SHA256 2020 CA1"
+        ]
+      ]
+    ],
+    "trusted": true
+  },
+  "sensitive_paths": [
+    {
+      "path": "/.env",
+      "status": 301,
+      "url": "https://facebook.com/.env",
+      "location": "https://www.facebook.com/.env"
+    },
+    {
+      "path": "/admin",
+      "status": 301,
+      "url": "https://facebook.com/admin",
+      "location": "https://www.facebook.com/admin"
+    },
+    {
+      "path": "/user/login",
+      "status": 301,
+      "url": "https://facebook.com/user/login",
+      "location": "https://www.facebook.com/user/login"
+    },
+    {
+      "path": "/login",
+      "status": 301,
+      "url": "https://facebook.com/login",
+      "location": "https://www.facebook.com/login"
+    },
+    {
+      "path": "/administrator",
+      "status": 301,
+      "url": "https://facebook.com/administrator",
+      "location": "https://www.facebook.com/administrator"
+    },
+    {
+      "path": "/server-status",
+      "status": 301,
+      "url": "https://facebook.com/server-status",
+      "location": "https://www.facebook.com/server-status"
+    },
+    {
+      "path": "/config",
+      "status": 301,
+      "url": "https://facebook.com/config",
+      "location": "https://www.facebook.com/config"
+    },
+    {
+      "path": "/.git",
+      "status": 301,
+      "url": "https://facebook.com/.git",
+      "location": "https://www.facebook.com/.git"
+    },
+    {
+      "path": "/phpmyadmin",
+      "status": 301,
+      "url": "https://facebook.com/phpmyadmin",
+      "location": "https://www.facebook.com/phpmyadmin"
+    },
+    {
+      "path": "/pma",
+      "status": 301,
+      "url": "https://facebook.com/pma",
+      "location": "https://www.facebook.com/pma"
+    },
+    {
+      "path": "/debug",
+      "status": 301,
+      "url": "https://facebook.com/debug",
+      "location": "https://www.facebook.com/debug"
+    },
+    {
+      "path": "/backup",
+      "status": 301,
+      "url": "https://facebook.com/backup",
+      "location": "https://www.facebook.com/backup"
+    },
+    {
+      "path": "/wp-admin",
+      "status": 301,
+      "url": "https://facebook.com/wp-admin",
+      "location": "https://www.facebook.com/wp-admin"
+    }
+  ],
+  "score": 57.5,
+  "breakdown": {
+    "headers": 22.5,
+    "cookies": 15,
+    "tls": 20.0,
+    "paths": 0.0,
+    "misc": 0.0
+  },
+  "grade": {
+    "grade": "F",
+    "summary": "Poor security posture with critical issues."
+  }
+}

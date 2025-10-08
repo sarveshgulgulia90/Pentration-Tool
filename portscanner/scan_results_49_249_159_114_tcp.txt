@@ -1,0 +1,7 @@
+TCP Port 25 | open | 220 Sophos ESMTP ready
+500 unrecognized command
+500 unrecognized command
+500 unrecognized command
+TCP Port 22 | open | No banner detected
+TCP Port 53 | open | No banner detected
+HTTP Port 443 | open | HTTP 400 | xxxx

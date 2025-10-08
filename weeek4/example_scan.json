@@ -1,0 +1,89 @@
+{
+  "url": "https://example.com",
+  "fetched_at": "2025-10-06T17:02:45.034643Z",
+  "headers": {
+    "Strict-Transport-Security": "Missing",
+    "Content-Security-Policy": "Missing",
+    "X-Frame-Options": "Missing",
+    "X-Content-Type-Options": "Missing",
+    "Referrer-Policy": "Missing",
+    "Permissions-Policy": "Missing"
+  },
+  "missing_headers": [
+    "Strict-Transport-Security",
+    "Content-Security-Policy",
+    "X-Frame-Options",
+    "X-Content-Type-Options",
+    "Referrer-Policy",
+    "Permissions-Policy"
+  ],
+  "cookies": [],
+  "tls": {
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "protocol": "TLSv1.3",
+    "cert_expiry": "2026-01-15",
+    "days_to_expiry": 101,
+    "expired": false,
+    "subject": [
+      [
+        [
+          "countryName",
+          "US"
+        ]
+      ],
+      [
+        [
+          "stateOrProvinceName",
+          "California"
+        ]
+      ],
+      [
+        [
+          "localityName",
+          "Los Angeles"
+        ]
+      ],
+      [
+        [
+          "organizationName",
+          "Internet Corporation for Assigned Names and Numbers"
+        ]
+      ],
+      [
+        [
+          "commonName",
+          "*.example.com"
+        ]
+      ]
+    ],
+    "issuer": [
+      [
+        [
+          "countryName",
+          "US"
+        ]
+      ],
+      [
+        [
+          "organizationName",
+          "DigiCert Inc"
+        ]
+      ],
+      [
+        [
+          "commonName",
+          "DigiCert Global G3 TLS ECC SHA384 2020 CA1"
+        ]
+      ]
+    ],
+    "trusted": true
+  },
+  "sensitive_paths": [],
+  "score": 70.0,
+  "score_breakdown": {
+    "headers": 0.0,
+    "cookies": 15.0,
+    "tls": 35.0,
+    "paths": 20.0
+  }
+}

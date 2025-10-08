@@ -1,0 +1,77 @@
+{
+  "url": "https://www.google.com",
+  "fetched_at": "2025-10-06T17:05:26.238672Z",
+  "headers": {
+    "Strict-Transport-Security": "Missing",
+    "Content-Security-Policy": "Missing",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-Content-Type-Options": "Missing",
+    "Referrer-Policy": "Missing",
+    "Permissions-Policy": "Missing"
+  },
+  "missing_headers": [
+    "Strict-Transport-Security",
+    "Content-Security-Policy",
+    "X-Content-Type-Options",
+    "Referrer-Policy",
+    "Permissions-Policy"
+  ],
+  "cookies": [
+    {
+      "name": "AEC",
+      "value_sample": "AaJma5vI...",
+      "secure": true,
+      "httpOnly": true
+    },
+    {
+      "name": "NID",
+      "value_sample": "525=C5ne...",
+      "secure": false,
+      "httpOnly": true
+    }
+  ],
+  "tls": {
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "protocol": "TLSv1.3",
+    "cert_expiry": "2025-12-08",
+    "days_to_expiry": 62,
+    "expired": false,
+    "subject": [
+      [
+        [
+          "commonName",
+          "www.google.com"
+        ]
+      ]
+    ],
+    "issuer": [
+      [
+        [
+          "countryName",
+          "US"
+        ]
+      ],
+      [
+        [
+          "organizationName",
+          "Google Trust Services"
+        ]
+      ],
+      [
+        [
+          "commonName",
+          "WR2"
+        ]
+      ]
+    ],
+    "trusted": true
+  },
+  "sensitive_paths": [],
+  "score": 66.2,
+  "score_breakdown": {
+    "headers": 5.0,
+    "cookies": 11.2,
+    "tls": 30.0,
+    "paths": 20.0
+  }
+}
